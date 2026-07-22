@@ -9,56 +9,29 @@ redirect_from:
 
 {% include base_path %}
 
+<p><a href="{{ base_path }}/files/MBurnett-CV-2026-07-22.pdf" class="btn btn--primary" download>Download CV as PDF</a></p>
+
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D. Candidate, Ecology, Evolution, & Marine Biology, UC Santa Barbara, 2022-present
+* M.S., Earth Systems, Stanford University, 2020
+* B.S., Earth Systems with Honors, Stanford University, 2019
 
-Work experience
+Professional Experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Assistant Marine Coordinator, The Nature Conservancy - Hawaii, 2020-2023
+* Research Assistant, Remote Sensing Ecohydrology Group, Stanford University, 2018-2019
+* Field Program Assistant, School of Earth Sciences, Stanford University, 2017-2018
+* Student Advisor, Stanford Earth Systems Program, 2017-2018
+* Research Intern, Hopkins Marine Station, 2017
+* Planning Intern, US Bureau of Land Management, 2017
+* Sustainable Agriculture Intern, Bumi Langit Institute (Indonesia), 2016
+* Research Intern, Department of Biology, Stanford University, 2015
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
   
 Teaching
 ======
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
