@@ -9,9 +9,9 @@ author_profile: true
 
 ## Mapping coconut plantations on atoll ecosystems
 
-<--
-[The dominance of coconut palms on Pacific atolls]({{ site.baseurl }}/images/pacific-map-v7.png){: .align-right width="320px"}
--->
+
+![The dominance of coconut palms on Pacific atolls]({{ site.baseurl }}/images/pacific-map-v7.png){: .align-right width="320px"}
+
 
 Coconut palms are perhaps the most important plant in the tropical Indo-Pacific. After centuries of cultivation by indigenous atoll societies, colonial plantation enterprises replaced vast tracts of native atoll forests with coconut monocrops between the late 18th and mid-20th centuries. Most of these plantations are now abandoned and overgrown, disrupting natural processes critical to atoll ecosystems.
 
@@ -41,9 +41,9 @@ For my doctoral research, I am using over 70 custom-designed sap flow sensors on
 
 ## Water consumption of the invasive riparian reed *Arundo donax* in the Santa Clara River, California
 
-<-- Optional image:
-[A FloraPulse microtensiometer installed in Arundo donax]({{ site.baseurl }}/images/florapulse-arundo.jpg){: .align-right width="320px"}
--->
+
+![A FloraPulse microtensiometer installed in Arundo donax]({{ site.baseurl }}/images/florapulse-arundo.jpg){: .align-right width="320px"}
+
 
 A collaborative team from UCSB, Occidental College, and Lewis & Clark College has collected three years of sap flow and stem water potential data from *Arundo donax* and three native riparian species along a climate gradient in the Santa Clara River.
 
@@ -57,9 +57,9 @@ These data will illuminate the water management implications of *A. donax* invas
 
 ## Sap flow sensor design and methodology
 
-<-- Optional image:
-[Custom sap flow sensor]({{ site.baseurl }}/images/20231205_175743.jpg){: .align-right width="320px"}
--->
+
+![Custom sap flow data loggers]({{ site.baseurl }}/images/20231205_175743.jpg){: .align-right width="320px"}
+
 
 Sap flow sensors are often cost-prohibitive, especially at the quantities needed to ensure robust sample sizes. Building on previous work, I designed low-cost heat pulse velocity sap flow sensors that can be customized to suit a variety of different plant species. The sensors are run by Arduino-based data loggers, measure up to four different depths simultaneously, and can run for up to eight months on a single battery charge with no need for solar power or long wire connections.
 
