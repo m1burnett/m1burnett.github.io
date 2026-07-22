@@ -5,7 +5,6 @@ permalink: /research/
 author_profile: true
 ---
 
-<section class="research-topic">
 
 ## Mapping coconut plantations on atoll ecosystems
 
@@ -17,11 +16,9 @@ Coconut palms are perhaps the most important plant in the tropical Indo-Pacific.
 
 Through my work at Stanford University, The Nature Conservancy, and the University of California Santa Barbara, I have led efforts to map coconut plantations on hundreds of Pacific atolls using novel remote sensing techniques and very high-resolution satellite imagery. The resulting maps document for the first time the true extent and distribution of coconut plantations on the understudied atoll ecosystem.
 
-</section>
 
 <hr>
 
-<section class="research-topic">
 
 ## Do coconut plantations deplete groundwater resources on tropical atolls?
 
@@ -33,11 +30,9 @@ Vegetation exerts a strong influence on atolls' scarce groundwater resources, po
 
 For my doctoral research, I am using over 70 custom-designed sap flow sensors on Tetiaroa Atoll to compare the water use rates of coconut palms to four woody plant species that formerly dominated the forests of the low Pacific islands. We are additionally using over 100 electromagnetic induction (EMI) profiles to directly assess the impacts of different plant species on groundwater.
 
-</section>
 
 <hr>
 
-<section class="research-topic">
 
 ## Water consumption of the invasive riparian reed *Arundo donax* in the Santa Clara River, California
 
@@ -49,11 +44,9 @@ A collaborative team from UCSB, Occidental College, and Lewis & Clark College ha
 
 These data will illuminate the water management implications of *A. donax* invasions and removal, the growth strategies used by each of the four study species, and the implications of future droughts and floods on Southern California's critical riparian ecosystems.
 
-</section>
 
 <hr>
 
-<section class="research-topic">
 
 ## Sap flow sensor design and methodology
 
@@ -65,11 +58,9 @@ Sap flow sensors are often cost-prohibitive, especially at the quantities needed
 
 To date, my team at UC Santa Barbara has built over 200 sap flow sensors and deployed them in four different study systems. In addition, I have developed new theory to upscale sap flux density measurements to sap flow estimates in trees with non-circular trunks. The `sapscaleR` R package implements these theoretical advances. Currently, I am developing new software to model wound and xylem heterogeneity effects on sap flux density estimates.
 
-</section>
 
 <hr>
 
-<section class="research-topic">
 
 ## Coconut crab habitat associations and conservation
 
