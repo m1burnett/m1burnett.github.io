@@ -3,7 +3,7 @@ title: "Foliar ẟ15N patterns in legumes and non-N fixers across a climate grad
 collection: publications
 category: manuscripts
 permalink: /publication/2022-01-05-Oecologia
-excerpt: 'This paper is about fixing template issue #693.'
+excerpt: 'Do patterns of biological nitrogen fixation correspond to pedogenic thresholds in rock-derived nutrients? Intensive isotopic sampling along a climate gradient suggests that, despite the mobility of N, its fixation can correspond to established domains of soil fertility.'
 date: 2022-01-05
 venue: 'Oecologia'
 paperurl: 'https://academicpages.github.io/files/paper3.pdf'
