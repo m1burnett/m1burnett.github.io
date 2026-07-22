@@ -72,4 +72,3 @@ Coconut crabs are charismatic and dominant members of atolls' terrestrial ecosys
 
 Surveys from over 20 Pacific islands have shown that coconut crabs are much more common in broadleaf native forests than in coconut monocultures, and mark-recapture modeling on Palmyra Atoll demonstrates that rats appear to impact the size distribution of coconut crabs, even in the absence of human harvesting. Additional GPS-tagging work executed on Palmyra will shed light on the movement ecology of coconut crabs living in a protected population.
 
-</section>
