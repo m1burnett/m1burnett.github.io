@@ -210,9 +210,9 @@ sidebar_toc: true
   font-size: 0.72rem !important;
 }
 
-.masthead__page-toc,
+.greedy-nav .visible-links .masthead__page-toc,
 .mobile-page-toc-menu {
-  display: none;
+  display: none !important;
 }
 
 @media screen and (max-width: 1023px) {
