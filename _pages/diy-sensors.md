@@ -156,24 +156,45 @@ sidebar_toc: true
 
 .sidebar-toc {
   margin-top: 1em;
-  padding: 0.85em;
+  padding: 0.35em 0;
   box-shadow: none;
+  text-transform: none;
+  letter-spacing: 0;
+  border: 0;
+  background: transparent;
 }
 
 .sidebar-toc .nav__title {
-  margin: 0 0 0.5em;
-  font-size: 0.75rem;
+  margin: 0 0 0.45em;
+  padding: 0;
+  color: var(--global-text-color);
+  font-size: 0.78rem;
+  background: transparent;
+  border: 0;
 }
 
 .sidebar-toc__menu {
   max-height: 52vh;
   overflow-y: auto;
+  border-top: 1px solid var(--global-border-color);
 }
 
 .sidebar-toc .toc__menu a {
-  padding: 0.14rem 0;
-  font-size: 0.68rem;
+  padding: 0.32rem 0;
+  color: var(--global-text-color);
+  font-family: inherit;
+  font-size: 0.76rem;
   line-height: 1.25;
+  text-transform: none;
+  letter-spacing: 0;
+  border-bottom: 1px solid var(--global-border-color);
+  text-decoration: none !important;
+}
+
+.sidebar-toc .toc__menu a:hover {
+  color: var(--global-link-color-hover);
+  background: transparent;
+  text-decoration: underline !important;
 }
 
 .sidebar-toc__item--h1 > a {
@@ -186,12 +207,114 @@ sidebar_toc: true
 
 .sidebar-toc__item--h3 > a {
   padding-left: 1.1rem !important;
-  font-size: 0.64rem !important;
+  font-size: 0.72rem !important;
+}
+
+.masthead__page-toc,
+.mobile-page-toc-menu {
+  display: none;
 }
 
 @media screen and (max-width: 1023px) {
+  .sidebar {
+    display: none !important;
+  }
+
   .sidebar-toc {
     display: none;
+  }
+
+  .masthead__page-toc {
+    display: table-cell !important;
+  }
+
+  .masthead__page-toc a {
+    margin: 0 0.45rem;
+    white-space: nowrap;
+    font-size: 0.82rem;
+  }
+
+  .mobile-page-toc-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 120;
+    max-height: 70vh;
+    margin: 15px 0 0;
+    padding: 5px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    list-style: none;
+    border: 1px solid var(--global-border-color);
+    border-radius: 4px;
+    background: var(--global-bg-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  }
+
+  .mobile-page-toc-menu:not(.hidden) {
+    display: block;
+    visibility: visible;
+  }
+
+  .mobile-page-toc-menu.hidden {
+    display: none !important;
+    visibility: hidden;
+  }
+
+  .mobile-page-toc-menu li {
+    display: block;
+    border-bottom: 1px solid var(--global-border-color);
+  }
+
+  .mobile-page-toc-menu li:last-child {
+    border-bottom: 0;
+  }
+
+  .mobile-page-toc-menu a {
+    display: block;
+    margin: 0;
+    padding: 0.65rem 0.8rem;
+    font-size: 0.88rem;
+    line-height: 1.25;
+    border-bottom: 0;
+  }
+
+  .mobile-page-toc__item--h1 > a {
+    font-weight: 700;
+  }
+
+  .mobile-page-toc__item--h2 > a {
+    padding-left: 1.35rem;
+  }
+
+  .mobile-page-toc__item--h3 > a {
+    padding-left: 1.9rem;
+    font-size: 0.82rem;
+  }
+
+  .manual-table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .manual-table table {
+    width: max-content;
+    max-width: none;
+  }
+
+  .archive p,
+  .archive li,
+  .archive td {
+    overflow-wrap: anywhere;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .mobile-page-toc-menu {
+    display: none !important;
   }
 }
 
@@ -291,7 +414,7 @@ But with all that said, *they worked*. So good luck to you, and please don't hes
 <tr><td>ADC</td><td>ADS1115</td><td>2</td><td>$3.00</td><td>Amazon</td></tr>
 <tr><td>RTC</td><td>DS3231SN</td><td>1</td><td>$3.00</td><td>Amazon</td></tr>
 <tr><td>2.5 V Reference</td><td>LT1460GIZ-2.5#PBF</td><td>1</td><td>$5.20</td><td>Digikey</td></tr>
-<tr><td>5 V Regulator</td><td>S7V7F5</td><td>1</td><td>$0.74</td><td>Pololu</td></tr>
+<tr><td>5 V Regulator</td><td>S7V7F5</td><td>1</td><td>$7.19</td><td>Pololu</td></tr>
 <tr><td>P-Channel MOSFET</td><td>IRF9540NPBF</td><td>1</td><td>$1.49</td><td>Newark</td></tr>
 <tr><td>N-Channel MOSFET</td><td>IRLZ34PBF</td><td>1</td><td>$2.15</td><td>Newark</td></tr>
 <tr><td>MicroSD Card Adapter</td><td>MicroSD Card Adapter (HW-125)</td><td>1</td><td>$1.20</td><td>Amazon</td></tr>
@@ -302,7 +425,7 @@ But with all that said, *they worked*. So good luck to you, and please don't hes
 <tr><td>1K ohm Resistors</td><td>1K ohm 0.5W resistors</td><td>1</td><td>$0.11</td><td>Amazon</td></tr>
 <tr><td>10K ohm Resistors</td><td>10K ohm 0.5W resistors</td><td>9</td><td>$0.11</td><td>Amazon</td></tr>
 <tr><td>100K ohm Resistors</td><td>100K ohm 0.5W resistors</td><td>1</td><td>$0.11</td><td>Amazon</td></tr>
-<tr class="manual-table__total"><td>Total</td><td></td><td></td><td>$35.04</td><td></td></tr>
+<tr class="manual-table__total"><td>Total</td><td></td><td></td><td>$41.49</td><td></td></tr>
 </table>
 <p>Note: for better reliability, you can purchase higher-quality versions of the ADS1115 and DS3231 RTC from Jameco Electronics under the Velleman brand, but they are much more expensive.</p>
 
@@ -764,7 +887,7 @@ But with all that said, *they worked*. So good luck to you, and please don't hes
 <tr><td>Microcontroller</td><td>Lolin Wemos D1 Mini</td><td>1</td><td>$4.50</td><td>Lolin via AliExpress</td></tr>
 <tr><td>ADC</td><td>ADS1115</td><td>2</td><td>$14.95</td><td>Adafruit</td></tr>
 <tr><td>RTC</td><td>DS3231SN</td><td>1</td><td>$3.00</td><td>Amazon</td></tr>
-<tr><td>5 V Regulator</td><td>S7V7F5</td><td>1</td><td>$0.74</td><td>Pololu</td></tr>
+<tr><td>5 V Regulator</td><td>S7V7F5</td><td>1</td><td>$7.19</td><td>Pololu</td></tr>
 <tr><td>P-Channel MOSFET</td><td>IRF9540NPBF</td><td>1</td><td>$1.49</td><td>Newark</td></tr>
 <tr><td>N-Channel MOSFET</td><td>IRLZ34PBF</td><td>1</td><td>$2.15</td><td>Newark</td></tr>
 <tr><td>MicroSD Card Adapter</td><td>MicroSD Card Adapter (HW-125)</td><td>1</td><td>$1.20</td><td>Amazon</td></tr>
@@ -774,7 +897,7 @@ But with all that said, *they worked*. So good luck to you, and please don't hes
 <tr><td>1K ohm Resistors</td><td>1K ohm 0.5W resistors</td><td>2</td><td>$0.11</td><td>Amazon</td></tr>
 <tr><td>10K ohm Resistors</td><td>10K ohm 0.5W resistors</td><td>1</td><td>$0.11</td><td>Amazon</td></tr>
 <tr><td>100K ohm Resistors</td><td>100K ohm 0.5W resistors</td><td>2</td><td>$0.11</td><td>Amazon</td></tr>
-<tr class="manual-table__total"><td>Total</td><td></td><td></td><td>$51.45</td><td></td></tr>
+<tr class="manual-table__total"><td>Total</td><td></td><td></td><td>$57.90</td><td></td></tr>
 </table>
 <p>Note: for better reliability, you can purchase a higher-quality versions of the DS3231 RTC from Jameco Electronics under the Velleman brand, but it is much more expensive.</p>
 

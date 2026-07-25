@@ -8,6 +8,11 @@
           <li class="masthead__menu-item masthead__menu-item--lg persist {% if page.url == '/' or page.url == '/index.html' %}selected{% endif %}">
             <a href="{{ base_path }}/">{{ site.title }}</a>
           </li>
+          {% if page.sidebar_toc %}
+            <li class="masthead__menu-item masthead__page-toc persist">
+              <a href="#mobile-page-toc" data-mobile-page-toc-toggle aria-controls="mobile-page-toc" aria-expanded="false">On this page</a>
+            </li>
+          {% endif %}
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
@@ -22,6 +27,10 @@
             <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
           </li>
         </ul>
+        {% if page.sidebar_toc %}
+          <ul id="mobile-page-toc" class="mobile-page-toc-menu hidden" data-mobile-page-toc-menu></ul>
+          <script src="{{ '/assets/js/sidebar-toc.js' | relative_url }}?v=mobile-toc-2" defer></script>
+        {% endif %}
         <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
