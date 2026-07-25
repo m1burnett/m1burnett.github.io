@@ -599,7 +599,7 @@ But with all that said, *they worked*. So good luck to you, and please don't hes
 
 <p>If you're not using grease, just use the epoxy for the entire needle. I also experimented with using grease and then fixing things in place by filling the needle base with superglue; it seemed to work fine but I decided to just keep using the thermal epoxy.</p>
 
-<p>Once you're done, put the needles in a drying oven to cure the epoxy according to the epoxy's temperature/duration guidelines.</p>
+<p>Once you're done, put the needles in a drying oven to cure the epoxy according to the epoxy's temperature/duration guidelines. Don't worry if you got epoxy on the outside of the probe, you can use steel wool to take it off easily once it's cured.</p>
 
 <div class="sapflow-section-clear"></div>
 
