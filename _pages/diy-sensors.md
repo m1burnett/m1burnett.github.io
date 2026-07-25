@@ -394,7 +394,7 @@ But with all that said, *they worked*. So good luck to you, and please don't hes
 
 <p><br></p>
 
-## Sourcing Components
+## Sourcing components
 <p>When you start ordering parts, I recommend you order enough to build at least twice as many thermistor probes and data loggers as you need. My first batch of data loggers had a 50% failure rate, although I eventually improved that with breadboard testing. Probes can also break or go bad so having spares is essential.</p>
 <p>Almost all of the necessary parts can be purchased from online vendors without manufacturing delays. One exception may be the tiny thermistors used in the probes. Models available on electronics storefront websites fluctuate in price; Beslity et al. purchased theirs for less than $3 each, but the same part was ~$20 each when I began my project. I ended up custom ordering them from North Star Sensors LLC, a US manufacturer based in Oceanside, for ~$8 each. I also evaluated similarly priced samples from Jingpu Semiconductor, a manufacturer based in China, but ultimately chose Northstar for lower shipping costs.</p>
 <p>Batteries may pose another sourcing challenge. I used a <a href="{{ site.baseurl }}/images/lifepo4.png">specific size</a> of prismatic LiFePO4 cells that fit snugly in my cases, but had to keep looking for new importers and retailers every time I ordered a batch. Many vendors did not seem to keep them in stock, and such batteries are generally in high demand for mobility applications.</p>
@@ -403,10 +403,10 @@ But with all that said, *they worked*. So good luck to you, and please don't hes
 <p>In order to keep costs down, many of these parts are knock-offs purchased for cheap on Amazon. There is an obvious reliability trade-off here, but I found that by testing parts before soldering, the savings were generally worth it. With that said, I strongly recommend purchasing the microSD cards and coin cell batteries from reliable sources. This means avoiding "marketplace" retailers like eBay, Amazon, Alibaba, and Walmart, and instead purhasing from reputable vendors like B&H, Adorama, Mouser, Digi-Key, or even brick and mortar stores like Costco or Micro Center. I purchased a large order of SanDisk microSD cards from what was advertized as the offical SanDisk store on Amazon, but ended up receiving counterfeit cards that failed after a few months and lost all my data. Don't risk it!</p>
 <p>The following parts list includes most of the components needed to build a sap flow sensor, with probably outdated prices from March 2024. Some of the parts names are confusing, so if you are unsure if it's correct, try to compare it to the pictures and video on this page.</p>
 
-## Parts List:
+## Parts list:
 
 <div class="manual-table manual-table--parts">
-<h3>Data Loggers</h3>
+<h3>Data loggers</h3>
 <table>
 <tr><th>Part</th><th>Model</th><th>Number</th><th>Cost per unit - USD</th><th>Vendor</th></tr>
 <tr><td>PCB</td><td>UCSB.sapflow.v1.5</td><td>1</td><td>$1.10</td><td>JLCPCB</td></tr>
@@ -444,7 +444,7 @@ But with all that said, *they worked*. So good luck to you, and please don't hes
 <tr class="manual-table__total"><td>Total</td><td></td><td></td><td>$95.55</td><td></td></tr>
 </table>
 
-<h3>Case and Batteries</h3>
+<h3>Case and batteries</h3>
 <table>
 <tr><th>Part</th><th>Model</th><th>Number</th><th>Cost per unit - USD</th><th>Vendor</th></tr>
 <tr><td>LiFePO4 batteries</td><td><a href="{{ site.baseurl }}/images/lifepo4.png">25 Ah 3.2v LiFePO4 prismatic cells (180x70x27mm)</a></td><td>2</td><td>$17.10</td><td>Sriko Batteries; Battery Hookup; Electric Car Parts Company; SeLian Energy</td></tr>
@@ -469,13 +469,13 @@ But with all that said, *they worked*. So good luck to you, and please don't hes
 
 <p>Power options could potentially be even wider with a different voltage regulator. I like the Pololu regulators listed above because they’re efficient and small, but anything that outputs enough volts for the Lolin D1 and the SD card adapter (which I think may require more than 3.3v) would work in place of the Pololu unit. If you use a different voltage regulator, be conscious of dropout voltages and make sure you’ve got enough volts going in.</p>
 
-## Building a Sap Flow Sensor
+## Building a sap flow sensor
 
-### Tutorial Video {#tutorial-video}
+### Tutorial video {#tutorial-video}
 
 <p>Check out this video to see all the steps of building a sap flow sensor! Filmed and edited by Talula Wilmot.</p>
 
-### The Data Logger
+### The data logger
 
 <ul>
 <li>Before we begin: it’s really, really critical to make good solder joints! Make sure you’re melting the solder all the way into the hole and getting 360-degree coverage, and use a spare PCB and some resistors to practice.</li>
@@ -496,14 +496,14 @@ But with all that said, *they worked*. So good luck to you, and please don't hes
 <li>Soldering station with "helping hands"</li>
 </ul>
 
-#### Step 1: Prepare the Breakout Boards
+#### Step 1: Prepare the breakout boards
 
 <p>The Lolin D1 microprocessor, ADCs, RTC, microSD adapter, and 5V regulator are in effect their own tiny PCBs that attach to the data logger PCB with metal legs. These legs usually have to be soldered onto these breakout boards first.</p>
 
 <p>The RTC module also needs to have three little surface-mounted components removed in order to disable its battery charging circuit. The picture below shows what you need to carefully desolder.  For the lower component with eight pads, try not to leave any residual solder bridging the pads. Sometimes that causes the RTC to malfunction.</p>
 <figure class="manual-figure"><a href="{{ site.baseurl }}/images/rtc-mod.png"><img src="{{ site.baseurl }}/images/rtc-mod.png" alt="Modified RTC"></a></figure>
 
-#### Step 2: The Breadboard Test
+#### Step 2: The breadboard test
 
 <p>Perhaps as a consequence of using knock-off breakout boards from Amazon, I find that they will frequently refuse to play nicely with one another. This rarely appears to be due to a single totally faulty chip, but rather the combination of all the parts--swapping an ADC out may suddenly allow the logger to run, and that ADC may work just fine with another set of components.</p>
 
@@ -541,7 +541,7 @@ But with all that said, *they worked*. So good luck to you, and please don't hes
 
 <div class="sapflow-section-clear"></div>
 
-### Heater and Thermistor Probes
+### Heater and thermistor probes
 <p>Required tools/supplies:</p>
 <ul>
 <li>Soldering iron</li>
@@ -697,7 +697,7 @@ But with all that said, *they worked*. So good luck to you, and please don't hes
 
 <div class="sapflow-section-clear"></div>
 
-## Programming the Sensor
+## Programming the sensor
 <p>Required tools:</p>
 <ul>
 <li>Computer with ArduinoIDE</li>
@@ -727,7 +727,7 @@ But with all that said, *they worked*. So good luck to you, and please don't hes
 <p>When you're ready to upload the real measurement script, bridge the D3-GND holes again and upload <a href="{{ site.baseurl }}/files/mwb_sapflow_2026_02_05.ino">this script</a> (or a version of it modified to your liking). This script is itself just a crudely modified version of Justin Beslity's original script and runs measurement cycles every 30 minutes except from 8:59pm to 3:59am, when it does not measure except once at 10 pm and once at 2 am. This script lights up the blue LED during the 10 second baseline measurement period, then turns it off when the 5 second heating period begins and keeps it off for the following 100 second measurement period.</p>
 
 
-## Testing the Sensor
+## Testing the sensor
 
 <p>After receiving a bad batch of MOSFET-Ns, I prefer to test the sensor on battery with a thermocouple thermometer attached to the heater probe to ensure it is heating up. Failure to heat up may indicate a MOSFET-N failure, but the resistance of the heater wire should be tested first.</p>
 
@@ -774,7 +774,7 @@ But with all that said, *they worked*. So good luck to you, and please don't hes
 
 <p>If you see unexpected or missing temperature data, try testing the offending probes' resistances with a multimeter. Sometimes if the soldering job was bad, the probes will work in some orientations but fail if bent a different direction. This can be fixed with some "probe surgery".</p>
 
-## Installing the Sensor
+## Installing the sensor
 <p>Required tools:</p>
 <ul>
 <li>Drill guide block (I had this custom-machined)</li>
@@ -790,7 +790,7 @@ But with all that said, *they worked*. So good luck to you, and please don't hes
 
 <p>At minimum, you need drill bits that are as long as your probes once they're locked into your drill chuck. If you're using 4-inch or longer probes, finding long enough drill bits can be a challenge. I found a bunch of 100 mm long 1.7 mm diameter drill bits on AliExpress and used those with success. The 100 mm length is also good for two-inch probes, as they reach about two inches into the tree when using an inch-thick drill guide and a drill with a chuck that's about an inch deep.</p>
 
-#### Step 1: Prepare the installation specimen
+#### Step 1: Prepare the installation site
 
 <div class="sapflow-step-figure-stack">
 <figure class="sapflow-step-figure"><a href="{{ site.baseurl }}/images/bark.png"><img src="{{ site.baseurl }}/images/bark.png" alt="Bark removed for sensor installation"></a></figure>
@@ -875,12 +875,12 @@ But with all that said, *they worked*. So good luck to you, and please don't hes
 
 <div class="sapflow-section-clear"></div>
 
-## Parts List:
+## Parts list:
 
 <p>(excluding FloraPulse analog probes, which are $500 each at time of writing)</p>
 
 <div class="manual-table manual-table--parts">
-<h3>Data Loggers</h3>
+<h3>Data loggers</h3>
 <table>
 <tr><th>Part</th><th>Model</th><th>Number</th><th>Cost per unit - USD</th><th>Vendor</th></tr>
 <tr><td>PCB</td><td>UCSB.dV.logger.v1.1</td><td>1</td><td>$1.10</td><td>JLCPCB</td></tr>
@@ -901,7 +901,7 @@ But with all that said, *they worked*. So good luck to you, and please don't hes
 </table>
 <p>Note: for better reliability, you can purchase a higher-quality versions of the DS3231 RTC from Jameco Electronics under the Velleman brand, but it is much more expensive.</p>
 
-<h3>Case and Batteries</h3>
+<h3>Case and batteries</h3>
 <table>
 <tr><th>Part</th><th>Model</th><th>Number</th><th>Cost per unit - USD</th><th>Vendor</th></tr>
 <tr><td>LiFePO4 batteries</td><td>6 Ah LiFePO4 Battery with USB</td><td>1</td><td>$13.50</td><td>Amazon</td></tr>
