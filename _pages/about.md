@@ -1,11 +1,22 @@
 ---
 permalink: /
 title: "Welcome to Mike's personal site!"
+layout: archive
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
+
+<figure class="research-media research-media--methods">
+  <div class="research-media__images">
+    <a href="{{ site.baseurl }}/images/P1082959.jpg">
+      <img src="{{ site.baseurl }}/images/P1082959.jpg" alt="Rochia nilotica">
+    </a>
+
+  </div>
+</figure>
+
 
 I am an ecologist with broad interests spanning ecophysiology, hydrology, remote sensing, and biological conservation. I enjoy identifying important problems in environmental science and management, developing deep knowledge of the relevant systems, and using rigorous field observations and technological innovations to tackle said problems.
 
