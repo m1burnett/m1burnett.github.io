@@ -210,7 +210,6 @@ sidebar_toc: true
   font-size: 0.72rem !important;
 }
 
-.greedy-nav .visible-links .masthead__page-toc,
 .mobile-page-toc-menu {
   display: none !important;
 }
@@ -224,7 +223,7 @@ sidebar_toc: true
     display: none;
   }
 
-  .masthead__page-toc {
+  .greedy-nav .visible-links .masthead__page-toc {
     display: table-cell !important;
   }
 
@@ -313,6 +312,7 @@ sidebar_toc: true
 }
 
 @media screen and (min-width: 1024px) {
+  .greedy-nav .visible-links .masthead__page-toc,
   .mobile-page-toc-menu {
     display: none !important;
   }
