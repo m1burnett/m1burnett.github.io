@@ -211,7 +211,7 @@ sidebar_toc: true
 }
 
 .mobile-page-toc-menu {
-  display: none !important;
+  display: none;
 }
 
 @media screen and (max-width: 1023px) {
@@ -252,7 +252,7 @@ sidebar_toc: true
   }
 
   .mobile-page-toc-menu:not(.hidden) {
-    display: block;
+    display: block !important;
     visibility: visible;
   }
 
