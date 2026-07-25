@@ -14,12 +14,15 @@
     {% endif %}
   </div>
 
+  {% unless page.author_profile_content == false %}
   <div class="author__content">
     <h3 class="author__name">{{ author.name }}</h3>
     {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
   </div>
+  {% endunless %}
 
+  {% unless page.author_profile_links == false %}
   <div class="author__urls-wrapper">
     <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
@@ -173,4 +176,5 @@
       {% endif %}      
     </ul>
   </div>
+  {% endunless %}
 </div>

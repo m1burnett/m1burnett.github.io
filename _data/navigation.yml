@@ -14,8 +14,8 @@ main:
   - title: "Research"
     url: /research/    
 
-  - title: "Sapflow Sensors"
-    url: /sapflow/    
+  - title: "DIY Sensors"
+    url: /diy-sensors/
     
   - title: "sapscaleR"
     url: /sapscaleR/
@@ -29,5 +29,5 @@ main:
   # - title: "CV"
   #   url: /cv-json/
     
-  - title: "About Me"
-    url: /about/
+  - title: "Misc."
+    url: /misc/

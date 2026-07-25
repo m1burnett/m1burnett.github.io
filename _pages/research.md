@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 
-## Mapping coconut plantations on atoll ecosystems
+## Mapping coconut plantations on Pacific atolls
 
 Coconut palms are perhaps the most important plant in the tropical Indo-Pacific. After centuries of cultivation by indigenous atoll societies, colonial plantation enterprises replaced vast tracts of native atoll forests with coconut monocrops between the late 18th and mid-20th centuries. Most of these plantations are now abandoned and overgrown, disrupting natural processes critical to atoll ecosystems.
 
@@ -18,10 +18,13 @@ Through my work at Stanford University, The Nature Conservancy, and the Universi
       <img src="{{ site.baseurl }}/images/pacific-map-v7.png" alt="The dominance of coconut palms on Pacific atolls">
     </a>
     <a href="{{ site.baseurl }}/images/agol-landcover.png">
-      <img src="{{ site.baseurl }}/images/agol-landcover.png" alt="Atoll landcover map">
+      <img src="{{ site.baseurl }}/images/agol-landcover.png" alt="Atoll land cover types">
+    </a>
+    <a href="{{ site.baseurl }}/images/ijrs-fig7.png">
+      <img src="{{ site.baseurl }}/images/ijrs-fig7.png" alt="Vegetation classification of Palmyra">
     </a>
   </div>
-  <figcaption>Left: Coconut palm dominance on 235 Pacific atolls. Right: Four land cover types mapped across 235 Pacific atolls.</figcaption>
+  <figcaption>Left: Coconut palm dominance on 235 Pacific atolls. Middle: Four land cover types mapped across 235 Pacific atolls. Right: Vegetation classification of Palmyra Atoll.</figcaption>
 </figure>
 
 
@@ -90,7 +93,7 @@ These data will illuminate the water management implications of *A. donax* invas
 
 Sap flow sensors are often cost-prohibitive, especially at the quantities needed to ensure robust sample sizes. Building on [previous work by Justin Beslity](https://doi.org/10.1016/j.ohx.2022.e00351), I designed low-cost heat pulse velocity sap flow sensors that can be customized to suit a variety of different plant species. The sensors are run by Arduino-based data loggers, measure up to four different depths simultaneously, and can run for up to eight months on a single battery charge with no need for solar power or long wire connections.
 
-To date, my team at UC Santa Barbara has built over 200 sap flow sensors and deployed them in four different study systems. Eventually we reached marginal costs of $200 and 5-6 hours per sensor, but many hours of development, testing, and maintenance were also required. Tutorials and resources for building sap flow sensors can be found on [this website]({{ site.baseurl }}/Sapflow Sensors/).
+To date, my team at UC Santa Barbara has built over 200 sap flow sensors and deployed them in four different study systems. Eventually we reached marginal costs of $200 and 5-6 hours per sensor, but many hours of development, testing, and maintenance were also required. Tutorials and resources for building sap flow sensors can be found on the [DIY Sensors]({{ site.baseurl }}/diy-sensors/) page.
 
 In addition, I have developed new theory to upscale sap flux density measurements to sap flow estimates in trees with non-circular trunks (see our recent article in [Agricultural and Forest Meteorology!](https://doi.org/10.1016/j.agrformet.2026.111357)). The [sapscaleR]({{ site.baseurl }}/sapscaleR/) R package implements these theoretical advances. Currently, I am developing new software to model wound and xylem heterogeneity effects on sap flux density estimates.
 
@@ -118,6 +121,30 @@ Surveys from over 20 Pacific islands have shown that coconut crabs are much more
 <hr>
 
 
+## Advanced land cover classification across discontiguous images
+
+<figure class="research-media research-media--single">
+  <div class="research-media__images">
+    <a href="{{ site.baseurl }}/images/phase-angle-slide.png">
+      <img src="{{ site.baseurl }}/images/phase-angle-slide.png" alt="Phase-angle classification diagram.">
+    </a>
+  </div>
+  <figcaption>Classification flowchart using iterative phase angle constraints on training data.</figcaption>
+</figure>
+
+
+Very high resolution multispectral data from satellite imaging platforms allow for the classification of land cover at high levels of detail. However, classifying large regions of interest with such data will typically require many different images be used. These will most likely feature variable imaging times, viewing angles, atmospheric conditions, and sensor specifications, preventing the accurate classification of the entire region of interest from small training datasets.
+
+While prior literature typically approaches this problem by attempting to normalizes images such that every class features similar visual characteristics across all images, these approaches typically rely upon overlapping regions in the imagery and/or some prior knowledge of the class composition of each image. But in certain conservation planning applications, regions of interest may be spatially discontiguous and training data may not be available for all images.
+
+For such applications, I developed a novel classification approach based on every image's "phase angle", or the great circle angle between the sun and the sensor from the perspective of the imaged land surface. The phase angle appears to correlate to spectral and textural features within each class and could thus be a valuable way to cull training data. Training data are first produced for a subset of images spanning the range of phase angles present in the dataset. Then each image is classified five times: once with the full training dataset, then with only training data from images whose phase angle is within 20 degrees of the target image's, then again within 15 degrees, etc. One of the five candidate classifications is then chosen based on validation data or visual inspection. For most images the all-training-data classification is the most accurate, but for images with unique visual characteristics, restricting training data to those produced from images with similar phase angles improves accuracy. See [Burnett et al. (2024)](https://doi.org/10.1088/1748-9326/ad8c66) for an application of this method to a dataset of over 400 WorldView-2 images!
+
+
+<hr>
+
+
+
+
 ## Cloud water intereption along altitudinal and structural gradients in montane tropical forests
 
 
@@ -142,7 +169,7 @@ I am currently experimenting with novel hierarchical approaches to integrate roa
 
 <hr>
 
-## Uncovering the agricultural practices of an ancient Hawaiian field system
+## Understanding the agricultural practices of an ancient Hawaiian field system
 
 
 <figure class="research-media research-media--single">

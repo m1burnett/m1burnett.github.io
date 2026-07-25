@@ -29,9 +29,59 @@ Professional Experience
 * Research Intern, Department of Biology, Stanford University, 2015
 
 
-  
 Teaching
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+* EEMB 140L - Plant Ecology Laboratory (TA, UC Santa Barbara)
+* EARTHSYS 116 - Heritage and Sovereignty in Hawaii (TA, Stanford University)
+* EARTHSYS 117 - Earth Sciences of the Hawaiian Islands (TA, Stanford University)
+* EARTHSYS 118 - Ecology of the Hawaiian Islands (TA, Stanford University)
+
+Mentorship
+======
+
+### UC Santa Barbara
+* Jared Umphress
+* Minh Tri Ngo
+* Fiona Jeweler
+* Rayna Ruggeri
+* Rebecca Sandoval
+* Kimberly Wong
+* Talula Wilmot
+* Nell Thompson
+* Marlys Kutach
+* Gianna Choy
+* Irina Roybal
+* Alexander Fischer
+* Schuyler Capita
+* Mariana Mezic
+* Kinga Bihari
+* Beckett Staubs-Friedmann
+* Alexandra Sasha Holland
+
+### Occidental College
+* Casey Wisely
+
+### Lewis & Clark College
+* Max Allen
+* Elizabeth Young
+  
+### Technical University of Munich
+* Barbara Brunschweiger
+
+### Stanford University
+* Marina Luccioni
+* Kiara Bacasen
+
+Awards, Fellowships, and Honors
+======
+* Simons Foundation Postdoctoral Fellowship in Plant Biology (2026)
+* EEMB GSAC Graduate Mentorship Award (UC Santa Barbara, 2025, 2026)
+* Best Presentation - EEMB Graduate Student Symposium (UC Santa Barbara, 2026)
+* Joseph H. Connell Field Ecology Research Fellowship (UC Santa Barbara, 2025)
+* Future Investigators in NASA Earth and Space Science and Technology Fellowship (NASA, 2023)
+* Certificate for Outstanding Achievement in Mentoring (Stanford University, 2019)
+* Miller-Marsden Prize for Innovative Environmental Research (Stanford University, 2018)
+* Dean's Award for Undergraduate Academic Achievement (Stanford University, 2018)
+* Departmental Honors (Stanford University, 2018)
+* First Prize - First Annual Big Earth Hackathon (Stanford University, 2018)
+* Volpert Scholarship (Stanford University, 2018)
