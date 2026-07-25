@@ -793,7 +793,7 @@ But with all that said, *they worked*. So good luck to you, and please don't hes
 </table>
 </div>
 
-<p>The Gerber file for the PCB design can be downloaded here.</p>
+<p>The Gerber file for the PCB design can be downloaded <a href="{{ site.baseurl }}/files/Gerber_ucsb-sapflow_ucsb-utensiometer-v1.1_2024-05-23.zip">here</a>.</p>
 
 ## Building the voltage logger
 
