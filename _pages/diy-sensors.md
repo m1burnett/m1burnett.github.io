@@ -475,6 +475,16 @@ But with all that said, *they worked*. So good luck to you, and please don't hes
 
 <p>Check out this video to see all the steps of building a sap flow sensor! Filmed and edited by Talula Wilmot.</p>
 
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+  <iframe
+    src="https://www.youtube.com/embed/-7R7a-QsLyA"
+    title="YouTube video"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+</div>
+
 ### The data logger
 
 <ul>
