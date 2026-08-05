@@ -7,7 +7,7 @@ author_profile: true
 
 Pacific Atoll Vegetation Maps
 ======
-The 235 vegetation maps produced by [Burnett et al. (2024)](https://doi.org/10.1088/1748-9326/ad8c66) can be downloaded from Dryad ([https://doi.org/10.5061/dryad.0k6djhb7x](https://doi.org/10.5061/dryad.0k6djhb7x)) or visualized on The Nature Conservancy's [Geospatial Conservation Atlas](https://tnc.maps.arcgis.com/apps/instant/basic/index.html?appid=2bd5e7a72c63416ca5e137d840a0da93).
+The 235 vegetation maps produced by [Burnett et al. (2024)](https://doi.org/10.1088/1748-9326/ad8c66) can be downloaded from Dryad ([https://doi.org/10.5061/dryad.0k6djhb7x](https://doi.org/10.5061/dryad.0k6djhb7x)) or visualized on The Nature Conservancy's [Geospatial Conservation Atlas](https://geospatial.tnc.org/apps/2bd5e7a72c63416ca5e137d840a0da93).
 
 The older vegetation map of Palmyra Atoll produced by [Burnett et al. (2019)](https://doi.org/10.1080/01431161.2019.1594440) can be downloaded from the Open Science Framework ([https://doi.org/10.17605/OSF.IO/J2STA](https://doi.org/10.17605/OSF.IO/J2STA)).
 
