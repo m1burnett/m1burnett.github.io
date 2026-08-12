@@ -112,6 +112,7 @@
     var broadGroup = getBroadGroup(observation);
     var broadGroupLabel = escapeHtml(getGroupLabel(broadGroup));
     var observedOn = observation.observed_on ? escapeHtml(observation.observed_on) : "Date unknown";
+    var uncertainty = observation.positional_accuracy ? Number(observation.positional_accuracy).toLocaleString() + " m" : "";
     var place = observation.place_guess ? escapeHtml(observation.place_guess) : "";
     var url = observation.uri || ("https://www.inaturalist.org/observations/" + observation.id);
     var photoUrl = getPhotoUrl(observation);
@@ -123,6 +124,7 @@
       scientificName && scientificName !== name ? '<p class="inat-popup__meta"><em>' + scientificName + "</em></p>" : "",
       '<p class="inat-popup__meta">' + broadGroupLabel + "</p>",
       '<p class="inat-popup__meta">' + observedOn + "</p>",
+      uncertainty ? '<p class="inat-popup__meta">Location uncertainty: ' + uncertainty + "</p>" : "",
       place ? '<p class="inat-popup__meta">' + place + "</p>" : "",
       '<p class="inat-popup__meta"><a href="' + escapeHtml(url) + '" target="_blank" rel="noopener">View on iNaturalist</a></p>',
       "</div>"
@@ -151,7 +153,6 @@
 
     url.searchParams.set("user_id", user);
     url.searchParams.set("geo", "true");
-    url.searchParams.set("mappable", "true");
     url.searchParams.set("verifiable", "any");
     url.searchParams.set("order_by", "observed_on");
     url.searchParams.set("order", "desc");
@@ -286,7 +287,7 @@
         loaded += results.length;
         setStatus(
           statusElement,
-          "Loaded " + loaded.toLocaleString() + " of " + totalResults.toLocaleString() + " public mapped observations..."
+          "Loaded " + loaded.toLocaleString() + " of " + totalResults.toLocaleString() + " public georeferenced observations..."
         );
       }
 
@@ -305,7 +306,7 @@
 
       setStatus(
         statusElement,
-        "Showing " + observationsLayer.getLayers().length.toLocaleString() + " public mapped observations from iNaturalist user " + user + "."
+        "Showing " + observationsLayer.getLayers().length.toLocaleString() + " public georeferenced observations from iNaturalist user " + user + "."
       );
     } catch (error) {
       setStatus(statusElement, "Could not load iNaturalist observations. Please try refreshing the page.");
