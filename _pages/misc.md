@@ -7,7 +7,7 @@ author_profile: true
 
 ## Check out my iNaturalist observations!
 
-This map loads public, georeferenced observations from my [iNaturalist profile](https://www.inaturalist.org/observations?place_id=any&user_id=m1burnett&verifiable=any), including records with high location uncertainty when public coordinates are available.
+This map loads observations from my [iNaturalist profile](https://www.inaturalist.org/observations?place_id=any&user_id=m1burnett&verifiable=any):
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
   integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
