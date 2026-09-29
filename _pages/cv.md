@@ -9,11 +9,11 @@ redirect_from:
 
 {% include base_path %}
 
-<p><a href="{{ base_path }}/files/MBurnett-CV-2026-07-22.pdf" class="btn btn--primary" download>Download CV as PDF</a></p>
+<p><a href="{{ '/files/MBurnett-CV-2026-09-24.pdf' | relative_url }}" class="btn btn--primary" download>Download CV as PDF</a></p>
 
 Education
 ======
-* Ph.D. Candidate, Ecology, Evolution, & Marine Biology, UC Santa Barbara, 2022-present
+* Ph.D., Ecology, Evolution, & Marine Biology, UC Santa Barbara, 2022-2026
 * M.S., Earth Systems, Stanford University, 2020
 * B.S., Earth Systems with Honors, Stanford University, 2019
 

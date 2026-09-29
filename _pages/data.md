@@ -25,7 +25,7 @@ Data from [Burnett et al. (2026)](https://doi.org/10.1016/j.agrformet.2026.11135
 
 Tetiaroa Atoll Weather Data (January 2024 - September 2025)
 ====
-From January 2024 to September 2025, I collected hourly weather data from the Meteo-France weather station on Tetiaroa Atoll. These data cannot be accessed publicly at time of writing, so perhaps my dataset will be useful for someone. I created a mostly complete gap-filled time series using a METER ATMOS 41 weather station and a HOBO MX2202 light intensity pendant, both positioned next to the Meteo-France station. I also have a lot of 6-minute timestep data from the Meteo-France station, but I have not done anything with these data.
+From January 2024 to September 2025, I collected hourly weather data from the Meteo-France weather station on Tetiaroa Atoll. These data cannot be accessed publicly at time of writing, so perhaps my dataset will be useful for someone. I created a mostly complete gap-filled time series using a METER ATMOS 41 weather station and a HOBO MX2202 light intensity pendant, both positioned next to the Meteo-France station. I also have a lot of 6-minute timestep data from the Meteo-France station, but I have not done anything with those data.
 
 Meteorological variables include:
 

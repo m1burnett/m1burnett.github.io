@@ -46,8 +46,86 @@ This map loads observations from my [iNaturalist profile](https://www.inaturalis
   font-weight: 700;
 }
 
-.inat-popup__meta {
-  margin: 0.15em 0;
+.inat-popup .inat-popup__meta {
+  margin: 0.2em 0;
+  line-height: 1.3;
+}
+
+.inat-popup__pager {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8px 0 0;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.inat-observation-popup .leaflet-popup-content {
+  max-width: calc(var(--inat-map-width) - 60px);
+}
+
+.inat-observation-popup .leaflet-popup-tip-container {
+  display: none;
+}
+
+.inat-popup-group {
+  display: flex;
+  flex-direction: column;
+  max-height: calc(var(--inat-map-height) - 78px);
+}
+
+.inat-popup-group__content {
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.inat-popup__pager[hidden] {
+  display: none;
+}
+
+.inat-popup__pager button {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  color: #333;
+  background: #f4f4f4;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.inat-callouts {
+  position: absolute;
+  inset: 0;
+  z-index: 450;
+  pointer-events: none;
+}
+
+.inat-callout {
+  position: absolute;
+  padding: 2px;
+  margin: 0;
+  background: white;
+  border: 1px solid #666;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.inat-map .inat-callout img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.inat-callout:focus-visible,
+.inat-popup__pager button:focus-visible {
+  outline: 3px solid #007d92;
+  outline-offset: 2px;
 }
 
 .inat-legend {
@@ -109,4 +187,8 @@ This map loads observations from my [iNaturalist profile](https://www.inaturalis
   </a>
 </figure>
 
-Over the course of four field trips to Tetiaroa, I tracked almost all of our movements with my GPS. Pretty good coverage, but still more to see!
+<figure>
+  <a href="{{ site.baseurl }}/images/trackmap-detail.png">
+    <img src="{{ site.baseurl }}/images/trackmap-detail.png" alt="Detailed GPS tracks and field sites on Tetiaroa" style="display: block; width: 100%; height: auto; border: 1px solid var(--global-border-color); border-radius: 4px;">
+  </a>
+</figure>

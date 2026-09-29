@@ -26,11 +26,11 @@ author:
   avatar           : "P8252186.JPG"
   name             : "Michael Burnett"
   pronouns         : # example: "she/her"  
-  bio              : "PhD Candidate graduating September 2026; incoming Simons Foundation Postdoctoral Fellow"
+  bio              : "Simons Foundation Postdoctoral Fellow in the Plant Simulation Laboratory at UC Davis"
   location         : "San Diego, CA"
-  employer         : "University of California, Santa Barbara"
+  employer         :
   uri              : # URL
-  email            : "mburnett@ucsb.edu" 
+  email            : "mikeburnett@ucdavis.edu"
 
   # Academic websites
   academia         : # URL
