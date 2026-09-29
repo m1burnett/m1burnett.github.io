@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Welcome to Mike's personal site!"
+title: "Mike's website"
 layout: archive
 author_profile: true
 redirect_from: 
