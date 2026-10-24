@@ -69,7 +69,7 @@ For my doctoral research, I am using over 70 custom-designed sap flow sensors on
 </figure>
 
 
-A collaborative team from UCSB, Occidental College, and Lewis & Clark College has collected three years of sap flow and stem water potential data from *Arundo donax* and three native riparian species along a climate gradient in the Santa Clara River.
+I am working with collaborators from UCSB, Occidental College, and Lewis & Clark College to collect three years of sap flow and stem water potential data from *Arundo donax* and three native riparian species along a climate gradient in California's Santa Clara River. I directed the design, assembly, and deployment of over 70 sap flow sensors and over 50 microtensiometers.
 
 These data will illuminate the water management implications of *A. donax* invasions and removal, the growth strategies used by each of the four study species, and the implications of future droughts and floods on Southern California's critical riparian ecosystems.
 
